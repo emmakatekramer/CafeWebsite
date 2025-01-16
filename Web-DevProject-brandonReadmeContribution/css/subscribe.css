@@ -1,0 +1,134 @@
+/* ---------- Root Variables ---------- */
+:root {
+    --hunterGreen: #405344;
+    --beige: #FDECDA;
+    --darkbrown: #472e23;
+    --lightgreen: #7c8a7f;
+    --h2-font:'Saint George', sans-serif;
+    --h3-font: 'Poppins', serif;
+}
+
+/* ---------- Global Styles ---------- */
+body {
+    margin: 0;
+    font-family: var(--h3-font);
+    font-weight: 400;
+    background-color: var(--beige);
+    color: var(--hunterGreen);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--darkbrown);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------- Navbar Styles ---------- */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    font-family: var(--h3-font);
+}
+
+.navbar a {
+    float: left;
+    padding: 10px 0px;
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 15px;
+    width: 25%;
+    text-align: center;
+    background-color: var(--darkbrown);
+}
+
+.navbar a:hover {
+    background-color: var(--hunterGreen);
+    color: var(--beige);
+
+}
+
+
+/* ---------- Subscribe Section ---------- */
+.subscribe-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: var(--hunterGreen);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-container h1 {
+    font-family: var(--h2-font);
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--beige);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.subscribe-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--beige);
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: 500;
+    color: var(--beige);
+    font-size: 1rem;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--hunterGreen);
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    font-family: var(--h3-font);
+}
+
+input:focus {
+    border-color: var(--darkbrown);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--lightgreen);
+    color: var(--beige);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--h3-font);
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--darkbrown);
+    transform: scale(1.05);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background-color: var(--darkbrown);
+    color: var(--beige);
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 14px;
+    bottom: 0%;
+}

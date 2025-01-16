@@ -8,5 +8,5 @@ Contributers:
 - Emma Kramer
 - Brandon Weathers
 
-https://katerinayeung.github.io/Web-DevProject/html/index.html
+https://emmakatekramer.github.io/CafeWebsite/html/index.html
 

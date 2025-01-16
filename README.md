@@ -4,8 +4,8 @@ Professor:
 - Dr. YILIAN Zhang
 
 Contributers:
-- Katerina Yeung
 - Emma Kramer
+- Katerina Yeung
 - Brandon Weathers
 
 https://emmakatekramer.github.io/CafeWebsite/html/index.html

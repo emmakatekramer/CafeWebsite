@@ -1,0 +1,329 @@
+/* ---------- Root Variables ---------- */
+:root {
+    /* Main font color */
+    --hunterGreen: #405344;
+    /* Background color */
+    --beige: #FDECDA;
+    --darkbrown: #472e23;
+    --backgroundimg: url("../img/coffeeShop.jpg");
+    /* Font family */
+    --h2-font: 'Saint George', sans-serif;
+    --h3-font: "Poppins", serif;
+                                                
+}
+
+/* ---------- Global Styles ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkbrown);
+    background-size: auto 100%;
+    margin: 0;
+    font-family: var(--h3-font);
+    font-weight: 400;
+    color: var(--hunterGreen);
+    font-size: 13px;
+}
+
+/* ---------- Heading Banner ---------- */
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+#banner {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#logo {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    width: auto;
+    height: auto;
+    /* add a shadow to the logo */
+    filter: drop-shadow(0px 8px 10px grey);
+}
+
+
+
+/* ---------- Content Container ---------- */
+.content {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    top: 50%;
+}
+
+/* ---------- Navbar Styles ---------- */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    font-family: var(--h3-font);
+}
+
+.navbar a {
+    float: left;
+    padding: 15px 30px;
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 15px;
+    width: 25%;
+    text-align: center;
+    background-color: var(--darkbrown);
+}
+
+.navbar a:hover {
+    background-color: var(--hunterGreen);
+    color: var(--beige);
+
+}
+
+/* ---------- Menu Container Styles ---------- */
+.menu-container {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--beige);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ---------- Headings ---------- */
+h1, h2 {
+    text-align: center;
+    color: var(--darkbrown);
+    font-family: var(--h2-font);
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px #0000002f;
+    font-size: 40px;
+}
+
+h2 {
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 10px 0 5px;
+    font-family: var(--h3-font);
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+}
+
+/* ---------- Paragraph ---------- */
+p {
+    margin: 5px 0;
+}
+
+/* ---------- Menu and Order Summary Styles ---------- */
+.menu ul, .order-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li, .order-summary li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--hunterGreen);
+}
+
+/* ---------- Buttons ---------- */
+button {
+    background-color: var(--darkbrown);
+    color: var(--beige);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: var(--h3-font);
+    font-weight: 400;
+}
+
+button:hover {
+    background-color: var(--beige);
+    color: var(--hunterGreen);
+    transform: scale(1.05);
+}
+
+/* ---------- Order Summary Styles ---------- */
+.order-summary {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid var(--hunterGreen);
+}
+
+#total-price {
+    font-weight: bold;
+    color: var(--hunterGreen);
+}
+
+
+/* ---------- Menu Navigation ---------- */
+.menuNav {
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    position: relative; /* For precise positioning */
+    top: -30px; /* Adjust vertical positioning as needed */
+    background-color:white; /* Background color */
+    padding: 0 0 30px 0; /* Adds vertical spacing */
+    z-index: 1; /* Ensures it's above the banner */
+    gap: 60px; /* Adds space between menu items */
+}
+
+.menu-icon {
+    text-align: center; /* Centers the icon and label */
+    color: var(--darkbrown); /* Matches theme color */
+}
+
+#icons {
+    width: 100% auto;
+    height: 150px;
+    vertical-align: middle;
+    transition: transform 0.2s, opacity 0.3s; /* Smooth hover effects */
+    padding: 0px;
+}
+
+#icons:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    opacity: 0.8; /* Slight fade effect on hover */
+}
+
+.icon-label {
+    margin-top: 0px; /* Adds space between icon and label */
+    font-size: 14px; /* Adjust label text size */
+    font-family: var(--h3-font); /* Matches font family */
+}
+
+
+
+/* ---------- Menu Categories ---------- */
+.menu-category {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-image {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item button {
+    bottom: 5px; /* 5px above the bottom of the container */
+}
+
+
+
+/* ---------- Carousel Styles ---------- */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll; /* Allows horizontal scrolling */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    gap: 20px;
+    padding: 10px;
+
+    /* Hide the scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+}
+
+/* ---------- Carousel Buttons ---------- */
+.carousel-button {
+    background: none; /* Removes the background */
+    border: none; /* Removes the border */
+    color: var(--darkbrown); /* Matches the color scheme */
+    font-size: 2rem; /* Ensures arrows are visible */
+    cursor: pointer; /* Indicates interactivity */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-button:hover {
+    color: var(--darkbrown); /* Slightly darker on hover for visibility */
+    transform: scale(1.1); /* Adds a slight zoom effect */
+}
+
+.carousel-button:focus {
+    outline: none; /* Removes focus outline for cleaner design */
+}
+
+/*--Footer--*/
+footer {
+    height: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--darkbrown);
+    color: var(--beige);
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    font-family: var(--h3-font);
+    position: relative; 
+}
+
+/* Links in footer */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block; 
+    padding: 10px 40px;
+    background-color: var(--darkbrown); 
+}
+
+/* Footer name */
+.footer-name {
+    float: left; 
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-family: var(--h2-font);
+}
+
+/* Paragraphs in footer */
+footer p {
+    font-size: 11px;
+    margin: 10px 0; 
+}
+
+
